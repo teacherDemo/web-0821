@@ -1,0 +1,58 @@
+/* 所有標籤預設邊界歸0 */
+*{
+    margin: 0;    
+}
+body{
+    background-color: #eee;
+}
+
+/* 最外層 */
+.wrap{
+    background-color: #fff;
+    width: 770px;
+    /* 頁面水平置中 */
+    margin-left: auto;
+    margin-right: auto;
+    /* 內容縮排 */
+    /* 標準寫法 */
+    /* 
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;     
+    */
+
+    /* 一行式寫法 */
+    /* padding: 上 右 下 左; */
+    /* padding: 50px 20px 50px 20px; */
+
+    /* padding: 上下 左右; */
+    padding: 50px 20px;
+}
+
+figure{    
+    width: 100%;    /*相對於最外層.wrap => 770px*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+figure img{
+    width: 100%;    /*相對於figure父元素770px*/
+}
+figcaption{
+    color: #aaa;
+    font-size: 14px;
+    /* 上邊界 */
+    margin-top: 10px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+h3{
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+    /* 行高 */
+    line-height: 2;
+}
